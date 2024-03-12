@@ -16,6 +16,7 @@ import Post from './components/post/Post';
 import NotFound from './components/layout/NotFound';
 import PrivateRoute from './components/routing/PrivateRoute';
 import { LOGOUT } from './actions/types';
+import Mycom from './mycom';
 
 // Redux
 import { Provider } from 'react-redux';
@@ -46,6 +47,7 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Navbar />
+        <Mycom />
         <Alert />
         <Routes>
           <Route path="/" element={<Landing />} />
